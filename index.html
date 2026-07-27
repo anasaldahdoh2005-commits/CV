@@ -4,160 +4,196 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="معرض أعمال أنس الدحدوح في تطوير واجهات الويب، التجارب التفاعلية، وتطبيقات الذكاء الاصطناعي.">
+  <meta name="theme-color" content="#111827">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="icon" href="images/star.svg">
-  <title>Anas Aldahdouh | Portfolio</title>
+  <script src="js/script.js" defer></script>
+  <title>أنس الدحدوح | مطوّر واجهات وتجارب رقمية</title>
 </head>
 
 <body>
-  <header class="nav">
-    <h1>أنس الدحدوح</h1>
-    <nav>
+  <a class="skip-link" href="#main-content">انتقل إلى المحتوى</a>
+
+  <header class="nav" id="site-header">
+    <a class="brand" href="#home" aria-label="العودة إلى الصفحة الرئيسية">
+      <span class="brand-avatar" aria-hidden="true">
+        <img src="images/my-photo.png.jpeg" alt="">
+      </span>
+      <span>
+        <strong>أنس الدحدوح</strong>
+        <small>Web Developer</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="فتح قائمة التنقل" aria-expanded="false"
+      aria-controls="primary-navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="primary-navigation" aria-label="التنقل الرئيسي">
       <ul>
-        <li><a href="#home">الرئيسة</a></li>
+        <li><a href="#home" class="active">الرئيسية</a></li>
         <li><a href="#about">عني</a></li>
-        <li><a href="#skills">مهارات</a></li>
-        <li><a href="#projects">مشاريع</a></li>
+        <li><a href="#skills">المهارات</a></li>
+        <li><a href="#projects">المشاريع</a></li>
         <li><a href="#contact">تواصل معي</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
+    <section class="hero" id="home">
+      <div class="hero-content reveal">
+        <p class="eyebrow"><span></span> متاح لبناء تجارب رقمية جديدة</p>
+        <h1>أحوّل الأفكار إلى<br><em>تجارب ويب واضحة ومؤثرة.</em></h1>
+        <p class="hero-description">
+          أنا أنس الدحدوح، طالب علوم حاسوب ومطوّر ويب مهتم ببناء واجهات متجاوبة، حلول تفاعلية،
+          وتطبيقات تستفيد من الذكاء الاصطناعي.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            استكشف مشاريعي
+            <i class="fas fa-arrow-left" aria-hidden="true"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary">لنتحدث عن مشروعك</a>
+        </div>
+        <div class="hero-stats" aria-label="ملخص الخبرات">
+          <div class="stat-item"><strong>5</strong><span>مشاريع مختارة</span></div>
+          <div class="stat-item"><strong>3+</strong><span>مجالات تقنية</span></div>
+          <div class="stat-item"><strong>100%</strong><span>تجارب متجاوبة</span></div>
+        </div>
+      </div>
 
-    <section class="me" id="home">
-      <img class="me-img" src="images/my-photo.png.jpeg" alt="صورة أنس الدحدوح">
-      <div class="me-content">
-        <h2>مرحباً ، أنا أنس الدحدوح </h2>
-        <p>طالب في علوم الحاسوب ، مهتم بتطوير الويب وأتمتة الذكاء الاصطناعي.</p>
-        <a href="#projects" class="btn">شاهد أعمالي</a>
+      <div class="hero-visual reveal" aria-label="صورة أنس الدحدوح">
+        <div class="portrait-frame">
+          <span class="portrait-code" aria-hidden="true">&lt;/&gt;</span>
+          <img src="images/my-photo.png.jpeg" alt="أنس الدحدوح">
+          <div class="portrait-card">
+            <i class="fas fa-code" aria-hidden="true"></i>
+            <span><strong>أبني بعناية</strong>واجهة واضحة، كود منظّم، وتجربة سلسة.</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section-alt" id="about">
-      <div class="section-inner">
-        <h2 class="section-title">من أنا</h2>
-        <div class="about">
+    <section class="section section-muted" id="about">
+      <div class="section-inner about-layout">
+        <div class="section-heading reveal">
+          <p class="section-kicker">نبذة سريعة</p>
+          <h2>فضول تقني يتحوّل إلى حلول عملية.</h2>
+        </div>
+        <div class="about-copy reveal">
           <p>
-            أنا طالب علم حاسوب بحب أتعلم وأطور نفسي باستمرار، وعندي اهتمام كبير بتطوير الويب والذكاء الاصطناعي. اشتغلت
-            على عدة مشاريع وساعدتني أكتسب خبرة جيدة في بناء التطبيقات واستخدام تقنيات مختلفة، بالإضافة إلى خبرة في
-            Oracle APEX.
-
-            بحب أشارك في مشاريع جديدة وأتعلم أشياء عملية تطور مهاراتي وتزيد خبرتي. .
+            أتعلم من خلال البناء والتجربة. طوّرت مواقع تعريفية، تجارب مناسبات تفاعلية،
+            واجهات طلب للمطاعم، ومنتجات رقمية تستفيد من الذكاء الاصطناعي.
           </p>
-          <p>هدفي هو بناء حلول رقمية ذكية تساعد الناس.</p>
+          <p>
+            أركّز على بساطة الاستخدام، جودة التفاصيل، واستجابة التصميم على مختلف الشاشات،
+            مع خبرة إضافية في Oracle APEX وقواعد البيانات وأتمتة المهام.
+          </p>
         </div>
       </div>
     </section>
 
     <section class="section" id="skills">
-      <h2 class="section-title">المهارات</h2>
-      <div class="skills-grid">
-
-        <div class="skill-card">
-          <h3>تطوير الويب</h3>
-          <ul>
-            <li><strong>HTML</strong> — Building structured web pages.</li>
-            <li><strong>CSS</strong> — Styling web pages.</li>
-            <li><strong>JavaScript</strong> — Adding interactivity to web pages.</li>
-          </ul>
+      <div class="section-inner">
+        <div class="section-heading heading-row reveal">
+          <div>
+            <p class="section-kicker">ما الذي أستخدمه؟</p>
+            <h2>مهارات تربط التصميم بالتنفيذ.</h2>
+          </div>
+          <p>مجموعة أدوات تساعدني على بناء المنتج من الواجهة الأولى حتى التجربة النهائية.</p>
         </div>
 
-        <div class="skill-card">
-          <h3>Oracle APEX</h3>
-          <ul>
-            <li>Oracle APEX Development</li>
-            <li>Forms and Pages</li>
-          </ul>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <span class="skill-number">01</span>
+            <i class="fas fa-laptop-code" aria-hidden="true"></i>
+            <h3>تطوير الواجهات</h3>
+            <p>واجهات سريعة ومتجاوبة مع اهتمام بالتفاصيل وسهولة الاستخدام.</p>
+            <div class="skill-list">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <span class="skill-number">02</span>
+            <i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i>
+            <h3>الذكاء والأتمتة</h3>
+            <p>تجارب تستفيد من الذكاء الاصطناعي لتبسيط المهام وصناعة محتوى أفضل.</p>
+            <div class="skill-list">
+              <span>AI</span><span>Automation</span><span>NLP</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="projects">
+      <div class="section-inner">
+        <div class="section-heading projects-heading reveal">
+          <div>
+            <p class="section-kicker">أعمال مختارة</p>
+            <h2>مشاريع تجمع الفكرة، التصميم، والتفاعل.</h2>
+          </div>
+          <p>كل مشروع هنا صُمّم لهدف مختلف؛ من تقديم العلامة بصريًا إلى بناء تجربة استخدام كاملة.</p>
         </div>
 
-        <div class="skill-card">
-          <h3>AI &amp; Automation</h3>
-          <ul>
-            <li>Machine Learning</li>
-            <li>Natural Language Processing</li>
-            <li>Task Automation</li>
-          </ul>
+        <div class="project-filters reveal" role="group" aria-label="تصفية المشاريع">
+          <button type="button" class="filter-button active" data-filter="all">الكل</button>
+          <button type="button" class="filter-button" data-filter="food">مطاعم</button>
+          <button type="button" class="filter-button" data-filter="experience">تجارب تفاعلية</button>
+          <button type="button" class="filter-button" data-filter="product">منتجات رقمية</button>
         </div>
 
-        <div class="skill-card">
-          <h3>قواعد البيانات</h3>
-          <div class="skill-list">
-            <span class="skill-tag">MySQL</span>
-            <span class="skill-tag">Oracle Database</span>
-            <span class="skill-tag">MongoDB</span>
-            <span class="skill-tag">PostgreSQL</span>
+        <div class="projects-grid" id="projects-grid" aria-live="polite"></div>
+
+        <noscript>
+          <p class="noscript-message">يرجى تفعيل JavaScript لعرض المشاريع التفاعلية.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-inner contact-panel reveal">
+        <div>
+          <p class="section-kicker">هل لديك فكرة؟</p>
+          <h2>لنحوّلها إلى تجربة تستحق أن تُعرض.</h2>
+          <p>يمكنك التواصل معي مباشرة، وسأكون سعيدًا بمناقشة مشروعك أو فرصة التعاون القادمة.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:anasaldahdouh2005@gmail.com">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            أرسل بريدًا
+          </a>
+          <div class="contact-links" aria-label="روابط التواصل">
+            <a href="https://www.linkedin.com/in/anas-aldahdouh-6a49b83aa" target="_blank"
+              rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/972592401114" target="_blank" rel="noopener noreferrer"
+              aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://github.com/anasaldahdoh2005-commits" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="tel:+970592401114" aria-label="اتصال هاتفي"><i class="fas fa-phone"></i></a>
           </div>
         </div>
-
       </div>
     </section>
-
-    <section class="section-alt" id="projects">
-      <div class="section-inner">
-        <h2 class="section-title">المشاريع</h2>
-        <div class="projects-grid">
-
-          <article class="project-card">
-            <img src="images/restaurant-website.png" alt="Restaurant Website Screenshot">
-            <h3>موقع ويب لمطعم</h3>
-            <p>موقع ويب متجاوب لمطعم محلي، تم بناؤه باستخدام HTML, CSS, JavaScript.</p>
-            <a href="https://anasaldahdoh2005-commits.github.io/Angus-For-Meat.com/" target="_blank">View Project</a>
-          </article>
-
-          <article class="project-card">
-            <img src="images/congratulations-website.png" alt="Congratulations Website Screenshot">
-            <h3>موقع تهانينا</h3>
-            <p>موقع تهنئة عصري ومتجاوب، مصمم للاحتفاء بالإنجازات بطريقة أنيقة وتفاعلية.</p>
-            <a href="https://anasaldahdoh2005-commits.github.io/quran-project/" target="_blank">View Project</a>
-          </article>
-
-          <article class="project-card">
-            <img src="images/vision-studio.png" alt="Vision Studio Screenshot">
-            <h3>استوديو مدارك</h3>
-            <p>موقع إلكتروني شخصي لعرض أعمال محرر إبداعي ومدير وسائل التواصل الاجتماعي.</p>
-            <a href="https://anasaldahdoh2005-commits.github.io/MADARIK.COM/" target="_blank">View Project</a>
-          </article>
-
-          <article class="project-card">
-            <img src="images/qimmah-everest.png" alt="Qimmah Everest System Screenshot">
-            <h3>نظام قمة إيفرست</h3>
-            <p>يتميز بتكامل قواعد البيانات، ولوحات معلومات ديناميكية بنظام Oracle APEX.</p>
-            <a href="https://oracleapex.com/ords/r/anas_2005/top-everest/login" target="_blank">View Project</a>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <h2 class="section-title">تواصل معي</h2>
-      <div class="contact-links">
-        <a href="mailto:anasaldahdouh2005@gmail.com" title="Email Me">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/anas-aldahdouh-6a49b83aa" target="_blank" title="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="tel:+970592401114" title="Phone">
-          <i class="fas fa-phone"></i>
-        </a>
-        <a href="https://wa.me/972592401114" target="_blank" title="WhatsApp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-        <a href="https://github.com/anasaldahdoh2005-commits" target="_blank" title="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-    </section>
-
   </main>
-  <footer>
-    <p>Designed & Developed by Anas Aldahdouh</p>
-    <p>© 2026 All Rights Reserved</p>
-  </footer>
 
+  <footer>
+    <a class="brand footer-brand" href="#home">
+      <span class="brand-avatar" aria-hidden="true">
+        <img src="images/my-photo.png.jpeg" alt="">
+      </span>
+      <span><strong>أنس الدحدوح</strong><small>Built with purpose</small></span>
+    </a>
+    <p>تصميم وتطوير أنس الدحدوح — <span id="current-year">2026</span></p>
+  </footer>
 </body>
 
 </html>
